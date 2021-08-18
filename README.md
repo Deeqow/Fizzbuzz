@@ -1,2 +1,3 @@
 # Fizzbuzz
-FizzBuzz project to display FB values
+FizzBuzz project to display Fizz Buzz values
+
