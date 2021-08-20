@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "FizzBuzzPage";
+}
+
+<h2>FizzBuzzPage</h2>
+<br />
+<div>
+    @using (Html.BeginForm("DisplayFizzBuzz", "FizzBuzz", FormMethod.Post))
+    {
+        <table class="table table-bordered">
+            <tr>
+                <td>Enter input values: </td>
+                <td>@Html.TextBox("txtId")</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button class="button btn-primary" type="submit">Submit</button></td>
+            </tr>
+
+        </table>
+    }
+</div>
+<br />
+<hr />
+
+@{
+    if (ViewBag.myValues != null)
+    {
+        <div>
+            @Html.Partial("DisplayFizzBuzz");
+        </div>
+    }
+
+}
+

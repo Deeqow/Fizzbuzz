@@ -1,0 +1,11 @@
+﻿<h2>Display FizzBuzz</h2>
+<br />
+
+@{
+    string[] arrayString = ViewBag.myValues.Split('\n');
+    foreach (var input in arrayString)
+    {
+        <h4>@input.ToString()</h4>
+    }
+}
+
